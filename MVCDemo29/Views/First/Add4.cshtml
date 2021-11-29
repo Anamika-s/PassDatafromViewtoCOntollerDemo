@@ -1,0 +1,19 @@
+﻿@model MVCDemo29.Models.Numbers
+@{
+    ViewBag.Title = "Add4";
+}
+
+<h2>Add4</h2>
+
+ @{ using (Html.BeginForm())
+     {
+   @Html.LabelFor(m=>m.No1)
+         @Html.TextBoxFor(m=>m.No1)
+         <br />
+         @Html.LabelFor(m=>m.No2)
+         @Html.TextBoxFor(m=>m.No2)
+         <br />
+         <button type="submit"> Add </button>
+     }
+
+    }
